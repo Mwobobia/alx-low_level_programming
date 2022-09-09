@@ -5,7 +5,6 @@
 #include <time.h>
 
 /**
- *
  *  * main - Entry point
  *
  *   *
@@ -19,7 +18,6 @@
 
 
 int main(void)
-
 {
 
 	int n;
