@@ -1,18 +1,13 @@
-include "main.h"
+#include <unistd.h>
+
 /**
- * main - main
- * Description :  A program that prints _putchar
- *Return : 0
+ *_putchar - writes the character c to stdout
+ *@c: The character to print
+ *
+ * Return : On success 1
+ * On error , -1 is returned, and errno is set approprietly
  */
-
-int main(void)
+int _putchar(char c)
 {
-	int i;
-	char c[8] = "_putchar";
-
-	for (i =0; i <= 7; i++)
-	{
-		_putchar(c[i]);
-	}
-	_putchar('\n');
-	return 0
+	return (write(1, &c, 1));
+}
