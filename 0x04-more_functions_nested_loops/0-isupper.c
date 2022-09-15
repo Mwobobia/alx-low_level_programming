@@ -1,11 +1,11 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _isupper - func name
- * @c: var name
- * Return: 0
+ * _isupper - check the code for Holberton School students.
+ *@c : variable
+ * Return: 0 or 1 .
  */
-
 int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
@@ -16,4 +16,5 @@ int _isupper(int c)
 	{
 		return (0);
 	}
+	return (0);
 }
