@@ -1,36 +1,17 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * reverse_array - check the code for Holberton School students.
- * @n : variable
- * @a : variable
+ * _strcmp - compares two strings
+ * @s1: first string
+ * @s2: second string
+ *
+ * Return: outputs the difference of s1 and s2
  */
-
-void reverse_array(int *a, int n)
+int _strcmp(char *s1, char *s2)
 {
-	int i;
-	int tem;
-	int b = n;
+	int i = 0;
 
-	if (n % 2 == 0)
-	{
-		for (i = 0; i < n / 2; i++)
-		{
-			tem = a[i];
-			a[i] = a[b - 1];
-			a[b - 1] = tem;
-			b--;
-		}
-	}
-	else if (n % 2 == 1)
-	{
-		for (i = 0; i < (n - 1) / 2; i++)
-		{
-			tem = a[i];
-			a[i] = a[b - 1];
-			a[b - 1] = tem;
-			b--;
-		}
-	}
+	while (*(s1 + i) && *(s2 + i) && (*(s1 + i) == *(s2 + i)))
+		i++;
+	return (*(s1 + i) - *(s2 + i));
 }
