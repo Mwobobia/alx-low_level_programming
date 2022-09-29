@@ -2,9 +2,9 @@
 
 /**
  * _strspn - prototype to get length
- * @s: string to check
- * @accept: string to check
- * Return: length
+ * @s: check the original string
+ * @accept: substring
+ * Return: Number of bytes of the substring
  */
 unsigned int _strspn(char *s, char *accept)
 {
