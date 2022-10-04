@@ -5,7 +5,7 @@
  * @str: string to be duplicated
  * Return: a string pointer
  */
-char * strdup(char *str)
+char *_strdup(char *str)
 {
 	int i = 1, j = 0;
 	char *s;
