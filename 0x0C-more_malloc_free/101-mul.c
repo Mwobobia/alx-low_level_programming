@@ -72,7 +72,7 @@ char *iterate_zeroes(char *str)
  * @c: The character to be converted.
  *
  * Description: If c is a non-digit, the function
- *     		 exits with a status of 98.
+ * exits with a status of 98.
  * Return: The converted int.
  */
 int get_digit(char c)
@@ -126,6 +126,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 			printf("Error\n");
 			exit(98);
 		}
+
 		num = (*mult - '0') * digit;
 		num += tens;
 		*prod = (num % 10) + '0';
@@ -147,7 +148,6 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 	int num, tens = 0;
 
 	while (*(final_prod + 1))
-
 		final_prod++;
 
 	while (*(next_prod + 1))
@@ -159,6 +159,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 		num += tens;
 		*final_prod = (num % 10) + '0';
 		tens = num / 10;
+
 		next_prod--;
 		next_len--;
 	}
@@ -173,6 +174,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 		final_prod--;
 		next_prod--;
 	}
+
 	if (tens)
 		*final_prod = (tens % 10) + '0';
 }
@@ -204,7 +206,6 @@ int main(int argc, char *argv[])
 	if (*(argv[1]) == '\0' || *(argv[2]) == '\0')
 	{
 		printf("0\n");
-
 		return (0);
 	}
 
