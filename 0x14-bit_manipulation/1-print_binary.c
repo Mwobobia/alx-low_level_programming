@@ -1,18 +1,12 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * print_binary - a function that display binaries
- * @n : the integer we want to change to binary
+ * print_binary - prints the binary
+ * @n : unsigned int
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int c;
-	unsigned int display_mask = 1 << 31;
-
-	for (c = 1; c < 32; ++c)
-	{
-		_putchar(n & display_mask ? '1' : '0');
-		n <<= 1;
-	}
-	_putchar('\n');
+	if (n > 1)
+		print_binary(n >> 1);
+	putchar((n & 1) + '0');
 }
