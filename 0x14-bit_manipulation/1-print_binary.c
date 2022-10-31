@@ -1,5 +1,5 @@
 #include "main.h"
-#include "stdio.h"
+
 /**
  * print_binary - a function that display binaries
  * @n : the integer we want to change to binary
