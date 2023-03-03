@@ -6,7 +6,6 @@
  * @argv: argument vector
  * Return: zero on success
  */
-
 int main(int argc, char *argv[])
 {
     if (argc > 0)
