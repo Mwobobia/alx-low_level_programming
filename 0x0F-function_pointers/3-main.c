@@ -11,31 +11,31 @@
  */
 int main(int argc, char *argv[])
 {
-    int i, j, result;
-    int (*output)(int, int);
+int i, j, result;
+int (*output)(int, int);
 
-    if (argc != 4)
-    {
-        puts("Error");
-        exit(98);
-    }
+if (argc != 4)
+{
+puts("Error");
+exit(98);
+}
 
-    if (argv[2][1] != '\0')
-    {
-        puts("Error");
-        exit(99);
-    }
+if (argv[2][1] != '\0')
+{
+puts("Error");
+exit(99);
+}
 
-    output = get_op_func(*(argv + 2));
-    if (!output)
-    {
-        puts("Error");
-        exit(99);
-    }
+output = get_op_func(*(argv + 2));
+if (!output)
+{
+puts("Error");
+exit(99);
+}
 
-    i = atoi(argv[1]);
-    j = atoi(argv[3]);
-    res = output(i, j);
-    printf("%d\n", result);
+i = atoi(argv[1]);
+j = atoi(argv[3]);
+res = output(i, j);
+printf("%d\n", result);
 
-    return (0);
+return (0);
