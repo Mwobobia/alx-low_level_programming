@@ -11,7 +11,7 @@
  */
 int main(int argc, char *argv[])
 {
-int i, j, result;
+int i, j, res;
 int (*output)(int, int);
 
 if (argc != 4)
@@ -36,6 +36,6 @@ exit(99);
 i = atoi(argv[1]);
 j = atoi(argv[3]);
 res = output(i, j);
-printf("%d\n", result);
+printf("%d\n", res);
 
 return (0);
