@@ -39,3 +39,4 @@ res = output(i, j);
 printf("%d\n", res);
 
 return (0);
+}
