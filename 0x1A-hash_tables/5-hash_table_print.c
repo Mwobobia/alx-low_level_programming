@@ -21,7 +21,7 @@ for (i = 0; i < ht->size; i++)
 {
 if (ht->array[i] != NULL)
 {
-if (comma_flag == 1)
+	if (comma_flag == 1)
 	printf(", ");
 
 	node = ht->array[i];
